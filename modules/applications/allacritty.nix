@@ -1,4 +1,4 @@
-{shell}:
+{ config, pkgs, lib, ... }:
 {
   env = {
     "TERM" = "xterm-256color";

@@ -1,8 +1,15 @@
 {pkgs, config,...}:
-let
-  a = "asd";
-in
- {
+{
+
+  imports = [
+    ./xmonad.nix
+    ./xorg.nix
+    ./picom.nix
+    ./eww.nix
+    ./fonts.nix
+    ./rofi.nix
+  ];
+
   programs.rofi = {
     enable = true;
     font = "FuraCode Nerd Font";
